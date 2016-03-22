@@ -1,2 +1,4 @@
-# Summary
-Chrome extension that summarizes news articles on-screen
+points_chrome
+=================
+
+Thai Le - Capital One 2016 MindSumo Chrome Extension Submission

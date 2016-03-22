@@ -1,0 +1,33 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "To the Point",
+  "version": "0.1",
+
+  "description": "Summarizes on-screen article with single click!",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "author": "Thai Le",
+
+  "permissions": [
+    "http://www.diffbot.com/",
+    "http://live.diffbot.com/",
+    "http://textteaser.com/",
+    "http://127.0.0.1:5000/",
+    "http://www.textteaser.com/",
+    "tabs"
+  ],
+
+  "content_scripts": [{
+     "js": [ "assets/jquery.js", "assets/diffbot.js", "summary.js"],
+     "matches": ["http://*/*", "https://*/*"]
+  }],
+
+  "homepage_url": "https://github.com/Tokkojin/To-the-Point",
+  "short_name": "Point"
+}

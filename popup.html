@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @font-face {
+      font-family: "DroidSans";
+      src: url(assets/DroidSans.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "CreteRound";
+      src: url(assets/CreteRound.otf) format("opentype");
+    }
+
+    body {
+      font-family: DroidSans, Arial;
+      font-size: 14px;
+      background-color: #eee;
+      padding: 20px;
+    }
+
+    #content {
+      width: 600px;
+    }
+
+    #title {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #author {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    #authorInfo {
+      font-size: 1em;
+      margin-top: -5px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    #sentenceList {
+      margin-bottom: 7px;
+    }
+
+    #init {
+      text-align: center;
+      width: 100%;
+    }
+
+    #paragraph {
+      line-height: 1.3;
+      text-align: justify;
+    }
+
+    #views {
+      float: right;
+    }
+
+    #textContent {
+      background-color: white;
+      border: 1px solid #48b3f9;
+      /*box-shadow: 1px 1px 5px #8ddfda;*/
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      margin-top: 5px;
+    }
+
+    a, #logo {
+      /*font-family: CreteRound, Arial;*/
+      /*font-size: 16px;*/
+      text-decoration: none;
+      color: #FF6601;
+    }
+
+  </style>
+
+  <script type="text/javascript" src="assets/jquery.js"></script>
+  <script type="text/javascript" src="assets/diffbot.js"></script>
+  <script type="text/javascript" src="summary.js"></script>
+</head>
+<body>
+  <div id="title"></div>
+  <div id="author"></div>
+  <div id="authorInfo"></div>
+  <div id="content">
+    <div id="init">
+      <img src="assets/loader.gif">
+      <br>
+      <br>
+      Summarizing...
+    </div>
+  </div>
+  <div id="links"></div>
+</body>
+</html>
