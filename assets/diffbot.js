@@ -7,7 +7,7 @@ Updated: John Davi
 /**
 Constructor: Create an instance of the Diffbot class.
 Parameters:
-@token: 0cc09dde3cb2f3756064e8d8d3144cf2
+@token
 **/
 Diffbot = function (token) {
     var apiUri = "http://api.diffbot.com/v3/"; // Base url for all requests
